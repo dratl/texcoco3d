@@ -23,8 +23,8 @@
                 <p>En nuestro taller, convertimos tus proyectos en <span class="font-verde">piezas reales y funcionales</span>, listas <span class="font-verde">para impulsar tu negocio o emprendimiento.</span> Cuéntanos qué tienes en mente y armamos una cotización a la medida.</p>
             </div>
             <div class="column25 whatsapp-info">
-                <p class="whatsapp-phone">55 8923 4618<br><a href="mailto:info@texcoco3d.com">info@texcoco3d.com</a><br>Texcoc0, Estado de México</p>
-                <img src="i/whatsapp.svg" alt="Contacto en WhatsApp" class="whatsapp-icon">
+                <p class="contact-info"><span id="email-placeholder">[Email Protected]</span><br>Texcoco, Estado de México</p>
+                <a href="https://wa.link/vutbgq"><img src="i/whatsapp.svg" alt="Contacto en WhatsApp" class="whatsapp-icon"></a>
             </div>
         </div>
     </section>
@@ -72,5 +72,12 @@
     <section class="privacidad">
         <p><a href="aviso-privacidad.html">Aviso de privacidad</a> - Texcoco 3D &reg;2025</p>
     </section>
+    <script>
+        const emailUser = "info";
+        const emailDomain = "texcoco3d.com";
+        const emailElement = document.getElementById("email-placeholder");
+        const emailAddress = emailUser + "@" + emailDomain;
+        emailElement.innerHTML = `<a href="mailto:${emailAddress}">${emailAddress}</a>`;
+    </script>
 </body>
 </html>
