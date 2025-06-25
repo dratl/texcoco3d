@@ -180,6 +180,15 @@ section.thumbs div.thumbnail {
     height: 234px;
 }
 
+section.thumbs div.thumbnail img {
+    transition: all 0.5s;
+}
+
+section.thumbs div.thumbnail img:hover {
+    filter: brightness(0.6);
+    cursor: pointer;
+}
+
 /* Privacidad */
 
 section.privacidad {
