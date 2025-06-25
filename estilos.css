@@ -1,0 +1,221 @@
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+p {
+    font-size: 18px;
+    line-height: 18px;
+    color: #000;
+}
+
+section h3 {
+    font-size: 48px;
+    line-height: 52px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section p {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+/* Colors */
+
+.bg-verde {
+    background-color: #7CB518;
+}
+
+.font-verde {
+    color: #5C8001;
+}
+
+.font-blanco {
+    color: #FFF;
+}
+
+/* Header*/
+
+header {
+    width: 100%;
+    height: 540px;
+    text-align: center;
+    background-image: url('i/fondo-3d.svg');
+    background-color: #F3DE2C;
+    background-size: 356px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header h1 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header img.logo {
+    width: 600px;
+    margin-top: 202px;
+}
+
+/* Section Setup*/
+
+section {
+    width: 100%;
+}
+
+section div.inside {
+    display: flex;
+    width: 936px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section div.inside div.column75 {
+    width: 75%;
+}
+
+section div.inside div.column50 {
+    width: 50%;
+}
+
+section div.inside div.column25 {
+    width: 25%;
+}
+
+/* Contacto */
+
+section.contacto {
+    background-image: url('i/fondo-elefante.svg');
+    background-size: 1200px;
+    background-position:top center;
+    background-repeat: no-repeat;
+}
+
+section.contacto div.inside h3 {
+    margin: 95px 94px 48px 0;
+}
+
+section.contacto div.inside p {
+    margin: 0 94px 94px 0;
+}
+
+section.contacto div.inside div.whatsapp-info {
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+}
+
+section.contacto div.inside .whatsapp-icon {
+    width: 96px;
+}
+
+section.contacto div.inside .whatsapp-phone {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin: 18px 0 94px 0;
+}
+
+/* Catálogos */
+
+section.catalogos div.inside h3 {
+    margin: 95px 94px 48px 0;
+}
+
+section.catalogos div.inside p {
+    margin: 0 94px 94px 0;
+}
+
+section.catalogos div.inside .catalogos-links {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+section.catalogos div.inside .catalogos-links ul {
+    display: flex;
+    gap: 16px;
+    flex-flow: row-reverse wrap-reverse;
+    margin: 18px 0 100px 0;
+}
+
+section.catalogos div.inside .catalogos-links ul li {
+    background-color: #F3DE2C;
+    border-radius: 12px;
+    border: #5C8001 solid 2px;
+    padding: 12px;
+    font-size: 14px;
+}
+
+section.catalogos div.inside .catalogos-links ul li:hover {
+    background-color: #5C8001;
+    border: #F3DE2C solid 2px;
+}
+
+section.catalogos div.inside .catalogos-links ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+section.catalogos div.inside .catalogos-links ul li a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Thumbnails */
+
+section.thumbs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+section.thumbs div.thumbnail {
+    width: 234px;
+    height: 234px;
+}
+
+/* Privacidad */
+
+section.privacidad {
+    width: 100%;
+    padding: 100px 0 100px 0;
+    background-color: #F3DE2C;
+    background-image: url('i/fondo-a.svg');
+    background-size: 600px;
+    background-position:right center;
+    background-repeat: no-repeat;
+}
+
+section.privacidad p {
+    font-size: 18px;
+    text-align: center;
+}
+
+section.privacidad p a {
+    color: #5C8001;
+}
+
+section.privacidad p a:hover {
+    text-decoration: none;
+}
+
+/* Efectos */
+
+.svg-fade-in {
+  filter: grayscale(90%) brightness(2); /* Start semi-transparent and dull */
+  opacity: 0;
+  animation: fadeInSvg 3s ease-in-out forwards;
+}
+
+@keyframes fadeInSvg {
+  to {
+    filter: grayscale(0%) brightness(1); /* Full color */
+    opacity: 1;
+  }
+}
