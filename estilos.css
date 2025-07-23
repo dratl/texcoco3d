@@ -221,6 +221,8 @@ section.thumbs div.thumbnail {
 
 section.thumbs div.thumbnail img {
     transition: all 0.5s;
+    width: 234px;
+    height: 234px;
 }
 
 section.thumbs div.thumbnail img:hover {
@@ -306,5 +308,18 @@ section.privacidad-texto p, section.privacidad-texto ul {
         margin-left: 32px !important;
         margin-right: 32px !important;
     }
-    
+
+}
+
+@media screen and (max-width: 800px) {
+    section.thumbs div.thumbnail {
+        width: 180px;
+        height: 180px;
+    }
+
+    section.thumbs div.thumbnail img {
+        transition: all 0.5s;
+        width: 180px;
+        height: 180px;
+    }
 }
